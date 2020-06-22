@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Displays "To infinity and beyond" indefinitely
+# Displays "I am invincible!!!" when receiving a SIGTERM signal
+# Defines and activates handlers to be run when the shell receives signals
+#or other conditions.
+trap "echo I am invincible!!!" SIGTERM
+while true; do
+      echo "To infinity and beyond"
+      sleep 2
+done

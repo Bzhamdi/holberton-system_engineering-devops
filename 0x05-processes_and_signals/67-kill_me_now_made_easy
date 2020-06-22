@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#pkill will send the specified signal (by default SIGTERM) to each process instead of listing them on stdout.
+pkill -f 7-highlander

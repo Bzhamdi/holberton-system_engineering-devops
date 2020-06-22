@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Displays the PID, along with the process name contain word bash
+#-l list the process name
+#the first iteration: bash PID
+#the second the 3-show_your_bash_pid_made_easy script PID
+pgrep -l bash
