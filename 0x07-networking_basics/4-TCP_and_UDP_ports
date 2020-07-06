@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#-a : Tous les ports
+#-t : Tous les ports TCP
+#-u : Tous les ports UDP
+#-l : Tous les ports en écoute
+#-n : Affiche directement les IP. Pas de résolution de nom.
+#-p : Affiche le nom du programme et le PID associé.
+sudo netstat -lp
