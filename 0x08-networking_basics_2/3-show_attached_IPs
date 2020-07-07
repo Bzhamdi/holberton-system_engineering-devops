@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Sets the input field separator to the regular expression.
+ifconfig | awk -F "[: ]+" '/inet addr:/ { print $4 }'
