@@ -1,0 +1,1 @@
+ssh-copy-id -i authorized_keys.pub ubuntu@34.74.168.246
