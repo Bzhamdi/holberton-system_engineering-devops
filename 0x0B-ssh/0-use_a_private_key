@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# connect to your server using the private key
+#username@ip
+#-i identity_file Selects a file from which the identity (private key) 
+#for RSA or DSA authentication is read.
+ssh -i ~/.ssh/holberton ubuntu@34.74.168.246
