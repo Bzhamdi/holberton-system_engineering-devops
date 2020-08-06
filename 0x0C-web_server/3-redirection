@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# /redirect_me redirect to other page
+#new_string="line number 1\nline number 2\nline number 3"
+#sed -i "s/string_to_replace/$new_string/" file
+sudo apt-get -y update
+sudo apt-get -y install nginx
+redir="location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
+sudo sed -i "30i $redir" /etc/nginx/sites-available/default
+service nginx restart
