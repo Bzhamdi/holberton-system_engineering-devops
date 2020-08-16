@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # ngnix configuration  with puppet
-$file="/etc/nginx/sites-enabled/default"
+node {'nginx':
+	$myvar = $file="/etc/nginx/sites-enabled/default",
+}
 exec {'http_header':
 command  => 'sudo apt-get -y update && 
              sudo apt-get -y install nginx && 
