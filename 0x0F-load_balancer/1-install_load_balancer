@@ -7,6 +7,6 @@ sudo apt-get -y update
 sudo apt-get -y install haproxy=1.6.\*
 sudo service haproxy start
 sed -i "s/ENABLED=0/ENABLED=1/g" /etc/default/haproxy
-sed -i "\$ a\listen 1400-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\tserver 1400-web-01 34.74.168.246:80 check\n$
+sed -i "\$ a\listen 1400-lb-01\n\tbind *:80\n\tmode http\n\tstats enable\n\tbalance roundrobin\n\tserver 1400-web-01 34.74.168.246:80 check\n\tserver 1400-web-02 35.227.124.126:80 check" /etc/haproxy/haproxy.cfg
 service haproxy start
 
