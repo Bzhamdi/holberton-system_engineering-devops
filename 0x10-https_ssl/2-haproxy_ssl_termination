@@ -47,4 +47,4 @@ frontend www
         use_backend www
 
 backend www
-        server nginx 127.0.0.1:80 check
+        server nginx 127.0.0.1:81 check
