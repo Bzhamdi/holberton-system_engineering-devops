@@ -42,7 +42,7 @@ listen 1400-lb-01
 	server 1400-web-02 35.227.124.126:80 check
 frontend www
         bind *:80
-        bind *:443 ssl crt /etc/letsencrypt/live/www.bzhamdi.tech/all.pem
+        bind *:443 ssl crt /etc/letsencrypt/all.pem
 
         use_backend www
 
