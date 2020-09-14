@@ -9,7 +9,7 @@ import csv
 if __name__ == "__main__":
 
     employee_ID = argv[1]
-    
+
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
                         .format(
                             employee_ID)).json()
