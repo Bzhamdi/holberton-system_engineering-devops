@@ -10,10 +10,12 @@ if __name__ == "__main__":
 
     employee_ID = argv[1]
     complited = 0
-    user = requests.get('https://jsonplaceholder.typicode.com/users/{}'.format(
-        employee_ID)).json()
+    user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
+                        .format(
+                            employee_ID)).json()
     todos = requests.get(
-        'https://jsonplaceholder.typicode.com/users/{}/todos'.format(
+        'https://jsonplaceholder.typicode.com/users/{}/todos'
+        .format(
             employee_ID)).json()
 
     with open("{}.csv".format(employee_ID), 'w') as file:
