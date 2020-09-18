@@ -20,4 +20,4 @@ def top_ten(subreddit):
         for x in response["data"]["children"]:
             print(x["data"]["title"])
     except KeyError:
-        return 0
+        print("None")
